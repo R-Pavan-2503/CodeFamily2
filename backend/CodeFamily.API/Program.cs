@@ -7,6 +7,7 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 builder.Services.AddScoped<IGitService, GitService>();
+builder.Services.AddScoped<ICommitService, CommitService>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
