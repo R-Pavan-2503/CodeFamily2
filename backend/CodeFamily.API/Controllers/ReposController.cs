@@ -13,7 +13,7 @@ public class ReposController : ControllerBase
     private readonly ICommitService _commitService;
 
 
-    public ReposController(IGitService gitService)
+    public ReposController(IGitService gitService, ICommitService commitService)
     {
         _gitService = gitService;
         _commitService = commitService;
